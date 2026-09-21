@@ -1,6 +1,6 @@
 import streamlit as st
 import plotly.express as px
-import pandas as pd  # Adicionado para corrigir o NameError
+import pandas as pd 
 
 df = st.session_state['df']
 
