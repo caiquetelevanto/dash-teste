@@ -6,7 +6,7 @@ st.set_page_config(page_title="Dashboard Apple Store", layout="wide")
 @st.cache_data
 def carregar_dados():
     caminho_csv = r"c:\Users\Pichau\Desktop\Coisas de estudar\sql\appstore\AppleStore.csv"
-    df = pd.read_csv(caminho_csv)
+    df = pd.read_csv("AppleStore.csv")
     df['tipo_preco'] = df['price'].apply(lambda x: 'Gratuito' if x == 0 else 'Pago')
     return df
 
